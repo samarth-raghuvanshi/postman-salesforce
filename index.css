@@ -1,10 +1,5 @@
-@font-face {
-    font-family: 'customSalesforceFont';
-    src: url(/resource/SalesforceSans-Regular); 
- }
 
 body{
-    font-family:sans-serif;
     margin:0;
 }
 .zone{
@@ -15,32 +10,90 @@ body{
     position:fixed;
     font-family:"Salesforce Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     padding:0px 0px;
-    background-color: #fff;
+    background-color: #ffffff;
     color:#080707;
-    font-size:16px;
-    font-weight: 500;
+    display:flex;
 }   
 .img-links{
-    margin: 21px 40px;
+    margin: 21.5px 40px;
     vertical-align:middle;
 }
 a,img{
     vertical-align: middle;
 }
-a{
+.nav-links>a{
     color:#080707;
-    text-decoration: none;
     padding:0px 16px;
     margin-top:34px;
     margin-bottom:34px;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
 }
 a.first-link{
-    margin-left:18px;
+    margin-left:15px;
 }
 a:hover{
     color:#0176d3;
 }
-#nav-logo{
+.nav-logo, .nav-links{
+    float:inline-start;
+}
+.nav-links{
+    margin:10px;
+}
+.nav-logo{
     height:48.03px;
     width:68px;
+}
+.offset-info{
+    display:flex;
+    margin:auto 20px;
+    height:100%;
+    float:right;
+}
+.offset-info>div{
+    margin:auto 20px;
+}
+.phone-no>p{
+    text-align: center;
+    font-size:14px;
+    margin:0px;
+    padding:2px;
+}
+.ofs-search{
+    background-image:url('https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-blue');
+    height:18px;
+    width:18px;
+    border-radius:9px;
+    border:0;
+}
+.ofs-search:hover{
+    background-image:url('https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#search-light-blue');
+}
+.ofs-web{
+    background-image: url('https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#globe-blue');
+    height:18px;
+    width:18px;
+    border-radius:9px;
+    border:0;
+}
+.ofs-web:hover{
+    background-image: url('https://a.sfdcstatic.com/shared/images/c360-nav/icons.svg#globe-light-blue');
+}
+.ofs-login{
+    display:flex;
+    margin:auto 40px;
+    vertical-align: center;
+}
+#login{
+    height:18px;
+    width:18px;
+}
+.ofs-login>a{
+    color:#080707;
+    text-decoration: none;
+}
+#text-login{
+    padding: 2px;
 }
